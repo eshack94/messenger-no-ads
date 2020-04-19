@@ -2,6 +2,13 @@
 #import <Preferences/PSListController.h>
 #import <Preferences/PSSpecifier.h>
 
+#import "HaoPSUtil.h"
+#import "HaoPSHeaderImageCellCustom.h"
+#import "HaoPSHeaderCellCustom.h"
+#import "HaoPSLinkCellCustom.h"
+#import "HaoPSSwitchCellCustom.h"
+
+
 @interface NSTask : NSObject
 @property (copy) NSArray *arguments;
 @property (copy) NSString *currentDirectoryPath;
@@ -23,12 +30,5 @@
 - (void)terminate;
 @end
 
-@interface MNAHeader : UITableViewCell {
-  UILabel *label;
-  UILabel *underLabel;
-}
-@end
-
 @interface MNARootListController : PSListController
-+ (id)sharedInstance;
 @end

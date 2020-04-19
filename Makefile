@@ -15,5 +15,5 @@ SUBPROJECTS += pref ccmodule
 
 include $(THEOS_MAKE_PATH)/aggregate.mk
 
-after-install::
-	install.exec "killall -9 SpringBoard"
+# after-install::
+# 	install.exec "killall -9 SpringBoard"
